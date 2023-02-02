@@ -76,7 +76,7 @@ STAR --genomeDir $genome_dir \
 --runThreadN $num_threads \
 --readFilesIn $input_dir \
 --outFileNamePrefix $output_dir \
---outSAMtype $output_sam_type
+--outSAMtype $output_sam_type &> "$log_dir/$log_filepath"
 
 current_time=$(date +'%Y%m%d_%H%M%S')
 echo "END $current_time"
